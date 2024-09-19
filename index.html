@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+    <script src="./src/js/script.js" defer></script>
+    <script src="./src/components/Projeto.js"></script>
+    <script src="./src/components/ProjetoWeb.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Meu Portfólio</h1>
+        <ul class="menu">
+            <li>
+              <a href="#sobre mim">
+                Sobre mim
+                <svg width="24" height="24"><path d="M11 2.206l-6.235 7.528-.765-.645 7.521-9 7.479 9-.764.646-6.236-7.53v21.884h-1v-21.883z"/></svg>
+              </a>
+            </li>
+            <li>
+              <a href="#projects">
+                Projetos
+                <svg width="24" height="24"><path d="M11 2.206l-6.235 7.528-.765-.645 7.521-9 7.479 9-.764.646-6.236-7.53v21.884h-1v-21.883z"/></svg>
+              </a>
+            </li>
+            <li>
+              <a href="#contact">
+                Contato
+                <svg width="24" height="24"><path d="M11 2.206l-6.235 7.528-.765-.645 7.521-9 7.479 9-.764.646-6.236-7.53v21.884h-1v-21.883z"/></svg>
+              </a>
+            </li>
+
+          </ul>
+        </nav>
+    </header>
+    <section id="about">
+        <h2>Sobre Mim</h2>
+        <div class="typewriter">
+            <h3 id="text">"Eu sou Evellyn, faço o curso de Desenvolvimento gosto de viajar, estudar, sair com os amigos entre outros."</h3>
+          </div>
+    </section>
+    <section id="projects">
+        <h2>Projetos</h2>
+        <div class="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active"><img src="./src/img/Captura de tela 2024-09-19 103016.jpg" alt="Imagem 1"></div>
+                <div class="carousel-item"><img src="./src/img/Captura de tela 2024-09-19 103039.jpg" alt="Imagem 2"></div>
+                <div class="carousel-item"><img src="./src/img/Captura de tela 2024-09-19 103100.jpg" alt="Imagem 3"></div>
+            </div>
+        </div>
+        <section id="projects">
+            <h2>Projetos</h2>
+            <div id="project-list"></div>
+        </section>
+        <section id="contact">
+            <h2>Contato</h2>
+            <form class="inserir">
+                <input type="text" placeholder="Seu Nome">
+                <input type="email" placeholder="Seu Email">
+                <textarea placeholder="Sua Mensagem"></textarea>
+                <button style="--content: 'Enviar';"href="https://evellynsousa802@gmail.com">
+                    <div class="left"></div>
+                     Enviar
+                    <div class="right"></div>
+                  </button>
+                  
+            </form>
+        </section>
+</body>
+</html>
