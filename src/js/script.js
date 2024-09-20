@@ -4,7 +4,7 @@ const projetos = [
     new ProjetoWeb('Projeto Calculadora', 'Essa calculadora serve para calcular contas simples.')
 ]
 
-document.addEventListener('DOMContentLoaded', () => 
+document.addEventListener('DOMContentLoaded', () => {
     const projectList = document.getElementById('project-list')
     projetos.forEach(projeto => {
         projectList.innerHTML += projeto.exibirProjeto()
@@ -53,30 +53,7 @@ jQuery(document).ready(function ($) {
         $(".feedback-slider-item h3").addClass("animated fadeIn").css("opacity", "1")
         $(".feedback-slider-item img, .feedback-slider-thumb img, .customer-rating").addClass("animated zoomIn").css("opacity", "1")
     })
-
-    feedbackSlider.on("changed.owl.carousel", function (property) {
-        var current = property.item.index
-        var prevThumb = $(property.target).find(".owl-item").eq(current).prev().find("img").attr("src")
-        var nextThumb = $(property.target).find(".owl-item").eq(current).next().find("img").attr("src")
-        var prevRating = $(property.target).find(".owl-item").eq(current).prev().find("span").attr("data-rating")
-        var nextRating = $(property.target).find(".owl-item").eq(current).next().find("span").attr("data-rating")
-        $(".thumb-prev").find("img").attr("src", prevThumb)
-        $(".thumb-next").find("img").attr("src", nextThumb)
-        $(".thumb-prev").find("span").next().html(prevRating + '<i class="fa fa-star"></i>')
-        $(".thumb-next").find("span").next().html(nextRating + '<i class="fa fa-star"></i>')
-    })
-
-    $(".thumb-next").on("click", function () {
-        feedbackSlider.trigger("next.owl.carousel", [300])
-        return false
-    })
-
-    $(".thumb-prev").on("click", function () {
-        feedbackSlider.trigger("prev.owl.carousel", [300])
-        return false
-    })
 })
-
 var i = 0;
 var tag = document.getElementById("text")
 var html = document.getElementById("text").innerHTML
